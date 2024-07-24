@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtG-TX-oTi">
+                    <rect key="frame" x="31" y="25" width="179" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="2bB-fz-ilq"/>
+                        <constraint firstAttribute="width" constant="179" id="bph-26-767"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.64313725489999995" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCU-o0-Ue6">
+                    <rect key="frame" x="31" y="66" width="179" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="179" id="LiI-MB-itJ"/>
+                        <constraint firstAttribute="height" constant="26" id="Rjo-0V-0Hg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmW-Xb-dqv">
+                    <rect key="frame" x="16" y="133" width="94" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="修改数据"/>
+                    <connections>
+                        <action selector="buttAc:" destination="iN0-l3-epB" eventType="touchUpInside" id="mqD-IO-ZM9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QCU-o0-Ue6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="3KT-cM-E41"/>
+                <constraint firstItem="wtG-TX-oTi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="31" id="7yD-py-AMU"/>
+                <constraint firstItem="QCU-o0-Ue6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="66" id="Jod-Nb-wlR"/>
+                <constraint firstItem="wtG-TX-oTi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="al5-oK-1xI"/>
+                <constraint firstItem="QCU-o0-Ue6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="31" id="ebZ-C8-bJe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="megLab" destination="QCU-o0-Ue6" id="hmH-J3-4eX"/>
+                <outlet property="nameLabel" destination="wtG-TX-oTi" id="dfn-rb-ek8"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
